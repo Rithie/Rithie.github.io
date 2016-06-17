@@ -16,8 +16,8 @@
 
 
 body {
-	background: #fff;
-	color: #69606b;
+	background: #000;
+	color: #f04937; /*#69606b;*/
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 1.5;
@@ -46,7 +46,7 @@ body {
 
 a {
 	outline: none;
-	color: #cf4a5c;
+	color: #f04937;
 	text-decoration: none;
 }
 
@@ -55,7 +55,7 @@ a:hover, a:focus {
 }
 
 .demo-4 a {
-	color: #43939d;
+	color: #f04937;
 }
 
 .demo-4 a:hover,
@@ -138,7 +138,7 @@ a:hover, a:focus {
 	opacity: 0.7;
 	margin: 0 0.5em;
 	white-space: nowrap;
-	color: #cf4a5c;
+	color: #f04937;
 }
 
 .codrops-demos a:hover,

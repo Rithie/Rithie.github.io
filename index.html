@@ -2,9 +2,9 @@
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Inspiration for Article Intro Effects | Demo 4</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome | Euler Alvarenga </title>
 		<meta name="description" content="Inspiration for Article Intro Effects" />
 		<meta name="keywords" content="title, header, effect, scroll, inspiration, medium, web design" />
 		<meta name="author" content="Codrops" />
@@ -24,23 +24,21 @@
 				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19119"><span>Back to the Codrops Article</span></a></span>
 			</div>
 			<header class="header">
-				<div class="bg-img"><img src="img/4.jpg" alt="Background Image" /></div>
+				<div class="bg-img"><img src="img/10.jpg" alt="Background Image" /></div>
 				<div class="title">
 					<nav class="codrops-demos">
-						<a href="index.html">Push</a>
-						<a href="index2.html">Fade Out</a>
-						<a href="index3.html">Sliced</a>
-						<a class="current-demo" href="index4.html">Side</a>
-						<a href="index5.html">Fixed Side</a>
-						<a href="index6.html">Grid</a>
-						<a href="index7.html">Jam 3</a>
+						<a class="current-demo" href="index.html">Home</a>
+						<a href="#">Bio</a>
+						<a href="#">Portfolio</a>
+						<a href="#">Skills</a>
+						<a href="#">Go Social</a>
 					</nav>
-					<h1>Our Silent Summer Days</h1>
-					<p class="subline">Inspiration for Article Intro Effects</p>
-					<p>by <strong>Henry James</strong> &#8212; Posted in <strong>Inspiration</strong> on <strong>May 21, 2014</strong></p>
+					<h1>Computer Scientist, Mobile Developer, Photographer Enthusiast, Chef & Crazy Sometimes</h1>
+					<p class="subline">This is My Personal Space If You're Willing To Know Me Better</p>
+					<p>by <strong>Euler Alvarenga</strong> &#8212; Last Update on <strong>June 17th, 2016</strong></p>
 				</div>
 			</header>
-			<button class="trigger" data-info="Click to see the header effect"><span>Trigger</span></button>
+			<button class="trigger" data-info="More About Me"><span>Trigger</span></button>
 			<article class="content">
 				<div>
 					<p>We may define a food to be any substance which will repair the functional waste of the body, increase its growth, or maintain the heat, muscular, and nervous energy. </p>
@@ -108,7 +106,7 @@
 		<script>
 			(function() {
 
-				// detect if IE : from http://stackoverflow.com/a/16657946		
+				// detect if IE : from http://stackoverflow.com/a/16657946
 				var ie = (function(){
 					var undef,rv = -1; // Return value assumes failure.
 					var ua = window.navigator.userAgent;
@@ -128,7 +126,7 @@
 				}());
 
 
-				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179
 				// left: 37, up: 38, right: 39, down: 40,
 				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
@@ -137,7 +135,7 @@
 					e = e || window.event;
 					if (e.preventDefault)
 					e.preventDefault();
-					e.returnValue = false;  
+					e.returnValue = false;
 				}
 
 				function keydown(e) {
@@ -154,7 +152,7 @@
 				}
 
 				function wheel(e) {
-					// for IE 
+					// for IE
 					//if( ie ) {
 						//preventDefault(e);
 					//}
@@ -167,13 +165,13 @@
 				}
 
 				function enable_scroll() {
-					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;
 				}
 
 				var docElem = window.document.documentElement,
 					scrollVal,
-					isRevealed, 
-					noscroll, 
+					isRevealed,
+					noscroll,
 					isAnimating,
 					container = document.getElementById( 'container' ),
 					trigger = container.querySelector( 'button.trigger' );
@@ -181,10 +179,10 @@
 				function scrollY() {
 					return window.pageYOffset || docElem.scrollTop;
 				}
-				
+
 				function scrollPage() {
 					scrollVal = scrollY();
-					
+
 					if( noscroll && !ie ) {
 						if( scrollVal < 0 ) return false;
 						// keep it that way
@@ -199,7 +197,7 @@
 					if( isAnimating ) {
 						return false;
 					}
-					
+
 					if( scrollVal <= 0 && isRevealed ) {
 						toggle(0);
 					}
@@ -210,7 +208,7 @@
 
 				function toggle( reveal ) {
 					isAnimating = true;
-					
+
 					if( reveal ) {
 						classie.add( container, 'modify' );
 					}
@@ -234,15 +232,15 @@
 				// refreshing the page...
 				var pageScroll = scrollY();
 				noscroll = pageScroll === 0;
-				
+
 				disable_scroll();
-				
+
 				if( pageScroll ) {
 					isRevealed = true;
 					classie.add( container, 'notrans' );
 					classie.add( container, 'modify' );
 				}
-				
+
 				window.addEventListener( 'scroll', scrollPage );
 				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 			})();
