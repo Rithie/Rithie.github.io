@@ -4,9 +4,11 @@ title: About (algumas informações básicas)
 permalink: /about/
 ---
 
-*"O temor do SENHOR é o princípio da sabedoria", **Salmos 111:10***
+>*O temor do SENHOR é o princípio da sabedoria*, **Salmos 111:10***
 
-Desenvolvedor Web Full Stack AngularJS, Ionic Framework Advocate, estudante de Machine Learning no Coursera e curioso em tecnologias WEB como Javascript.
+
+
+Desenvolvedor Web Full Stack,  AngularJS, Ionic Framework Advocate, estudante de Machine Learning no Coursera e curioso sobre tecnologias em geral como Arduino, RPI, eletrônica...
 
 Eu sou estudante do curso de Ciências da Computação no [IFSUDESTEMG](https://www.ifsudestemg.edu.br/), 
 
@@ -16,9 +18,9 @@ Eu sou estudante do curso de Ciências da Computação no [IFSUDESTEMG](https://
 
 - Estudei no Web Design [**Saint Clair College Windsor ON Canada**](http://www.stclaircollege.ca/)
 
-- Estagiei em uma Startup de Mapas [Parallel 42 Systems](http://www.p42systems.com/) que me trouxe grande aprendizado e inúmeros insights sobre o que eu deveria buscar no meu aprendizado.
+- Estagiei em uma Startup que produzia serviços customizados de Mapas,  [Parallel 42 Systems](http://www.p42systems.com/).  Esse estágio me trouxe grande aprendizado profissional e incontáveis insights pessoais.
 
-- Atualmente bolsita de Iniciação Científica **CNPq**
+- Atualmente sou bolsista de Iniciação Científica **CNPq**
 
 - também sou Filósofo do Twitter nas horas vagas.
 
@@ -26,7 +28,7 @@ Eu sou estudante do curso de Ciências da Computação no [IFSUDESTEMG](https://
 
 
 
-Em breve estarei postando mais sobre meus projetos por aqui esse ano de 2017 =)
+Em breve estarei postando mais sobre meus projetos e alguns tutoriais ainda esse ano de 2017. Stay Tuned =)
 
 
 
