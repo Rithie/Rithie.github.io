@@ -19,22 +19,22 @@ avatar: https://pbs.twimg.com/profile_images/779774900592635904/FbXYsRtk.jpg
 footer-links:
   dribbble:
   email: euler.sistemas@gmail.com
-  facebook: maximohenrique1
+  facebook: 
   flickr:
-  github: maxmonteiro
-  instagram: https://www.instagram.com/oiler271/
-  linkedin: https://www.linkedin.com/in/euler-alvarenga-b9704467/
+  github: Rithie
+  instagram: oiler271
+  linkedin: euler-alvarenga-b9704467
   pinterest:
   rss: /feed # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: https://twitter.com/Rithie
+  twitter: Rithie
   stackoverflow:  # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: https://www.youtube.com/channel/UCym4_2rZHlX5YIQ0DFbJ6pw
   googleplus:  # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: https://disqus.com/by/rithie/
+disqus: rithie
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:

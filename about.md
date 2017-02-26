@@ -1,12 +1,17 @@
 ---
 layout: page
-title: About (sim, sobre eu)
+title: About (algumas informações)
 permalink: /about/
 ---
+Eu sou estudante do curso de Ciências da Computação no IFSUDESTEMG, 
+Bolsita de Iniciação Científica CNPq. Filósofo do Twitter nas horas vagas.
 
-Desenvolvedor web, UX designer, maker e muito mais.
+Desenvolvedor Web Full Stack AngularJS, Ionic Framework Passionate e curioso em tecnologias WEB como Javascript.
+
+Eu estarei postando mais sobre meus projetos por aqui esse ano de 2017 =)
 
 
-### Entre em contato, mande um oi (ou café :D).
 
-[maxmonteiro86@gmail.com](mailto:maxmonteiro86@gmail.com)
+### Entre em contato, troque uma idéia (ou chame para tomar um café :D).
+
+[euler.sistemas@gmail.com](mailto:euler.sistemas@gmail.com)
