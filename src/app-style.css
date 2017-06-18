@@ -45,15 +45,14 @@ table.table-striped.table-hover.dsp-list > tbody > tr > td:nth-child(6):after{
     margin-bottom: 2px;
 }
 .time-table{
- /* margin-top: 100px;
-  font-family: 'Open Sans', Helvetica;
-  color: #efefef;
-  border: 2px inset #30495e*/
-      margin-top: 100px;
+    margin-top: 100px;
     font-family: 'Open Sans', Helvetica;
     color: #f3f3f3;
-    border: 1px solid #969696;
-    box-shadow: 0px 0px 1px 1px #d2d2d2;
+    border: 1px solid #272727;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(210,210,210,1);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(210,210,210,1);
+    box-shadow: 0px 0px 1px 1px rgba(210,210,210,1);
+
 }
 .dsp-list{
     overflow: hidden;
@@ -145,12 +144,14 @@ td.cell{
   list-style: none;
 }
 .list-head{
-      background-color: #ca7373;
+    background-color: #272727;
     padding: 5px;
     font-weight: 600;
     color: #fafafa;
     margin: 0;
-    box-shadow: -1px 2px 20px 0px #b9a2a2;
+    -webkit-box-shadow: -1px 2px 20px 0px rgba(210,210,210,1);
+    -moz-box-shadow: -1px 2px 20px 0px rgba(210,210,210,1);
+    box-shadow: -1px 2px 20px 0px rgba(210,210,210,1);
 }
 .list-item{
       padding: 0;
@@ -202,33 +203,11 @@ td.cell{
     box-shadow: 0px 0px 2px 0px rgb(175, 175, 175);
 }
 .panel-body {
-    padding: 0px 1px;
+    padding: 0px 0px;
     font-size: 13px;
     cursor: pointer;
 }
 
-#overlay {
-      /*background-color: rgba(46,204,113,0.94);
-      z-index: 9006;
-      position: absolute;
-      /*left: 50%;
-      top: 10px;
-      width: 400px;
-      height: inherit;
-      display: none;
-      display: block;
-  margin-left: auto;
-  margin-right: auto;
-      padding: 10px;
-      color: #efefef;
-      text-align: center;
-      font-weight: 600;
-      font-family: 'Open Sans', Helvetica;
-      border-radius: 5px;
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(143,143,143,1);
-      -moz-box-shadow: 0px 0px 5px 0px rgba(143,143,143,1);
-      box-shadow: 0px 0px 5px 0px rgba(143,143,143,1);*/
-}
 
 .corVermelha{ background: #e74c3c !important; border: 1px dashed #eb685a;}
 .corVerde{    background: #2ecc71 !important; border: 1px dashed #f0ffd4;}
