@@ -6,7 +6,7 @@
   
   if(timeLeft === 0){ 
    clearInterval(cinterval);
-   location.href = '../app.html'; // index page here
+   location.href = 'app.html'; // index page here
   }
  };
 
