@@ -1,0 +1,419 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+/*body{
+  background: #fafafa;
+  font-family: sans-serif;
+  padding: 10px;
+}*/
+
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#lista{
+    width: 200px;
+    height: 400px;
+    float: left;
+    border: 1px solid #bada55;
+    padding: 10px;
+    margin: 100px 10px;
+}
+
+#lista ul{
+  list-style: none;
+}
+
+#overlay {
+      background-color: rgba(46,204,113,0.94);
+      z-index: 1006;
+      position: absolute;
+      right: 40px;
+      top: 10px;
+      width: 200px;
+      height: inherit;
+      display: none;
+      margin: 0 auto;
+      padding: 10px;
+      color: #efefef;
+      text-align: center;
+      font-weight: 600;
+      font-family: 'Open Sans', Helvetica;
+}
+
+.corVermelha{ background: #da2424 !important;}
+.corVerde{    background: #bdff3b !important;}
+
+.blue { background: #3498db; }
+
+.purple { background: #9b59b6; }
+
+.navy { background: #34495e; }
+
+.green { background: #2ecc71; }
+
+.red { background: #e74c3c; }
+
+.orange { background: #f39c12; }
+
+.cs335, .cs426, .md303, .md352, .md313, .cs240 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+table {
+  font-family: 'Open Sans', Helvetica;
+  color: #100f0f;
+}
+table tr:nth-child(2n) {
+  background: #eff0f1;
+}
+table tr:nth-child(2n+3) {
+  background: #fff;
+}
+table th, table td {
+  padding: 1em;
+  width: 10em;
+}
+
+.days, .time {
+  background: #34495e;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  text-align: center;
+}
+
+.time {
+  width: 3em !important;
+}
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+  -moz-transition: ease 0.5s all;
+  -o-transition: ease 0.5s all;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background-color: black;
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid black;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  bottom: 90%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+#main {
+    min-height: 800px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row;
+}
+
+#main > article {
+    margin: 4px;
+    padding: 5px;
+    /*border: 1px solid #cccc33;*/
+    /*border-radius: 7pt;*/
+    /*background: #dddd88;*/
+    flex: 3 1 60%;
+    order: 2;
+}
+
+#main > nav {
+    margin: 4px;
+    padding: 5px;
+    /*border: 1px solid #8888bb;
+    border-radius: 7pt;
+    background: #ccccff;*/
+    flex: 1 6 20%;
+    order: 1;
+}
+
+#main > aside {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #8888bb;
+    border-radius: 7pt;
+    background: #ccccff;
+    flex: 1 6 20%;
+    order: 3;
+}
+
+header, footer {
+    display: block;
+    margin: 4px;
+    padding: 4em;
+    min-height: 100px;
+    /*border: 1px solid #eebb55;*/
+    /*border-radius: 7pt;*/
+
+    background-color: #17BEBB;
+    border-bottom: 0.5em solid #2E282A;
+    color: #2E282A;
+    text-align: center;
+    /*margin-bottom: 2em;*/
+    /*padding: 4.5em 2em;*/
+}
+.hero {
+  background-color: #17BEBB;
+  border-bottom: 0.5em solid #2E282A;
+  color: #2E282A;
+  text-align: center;
+  /*margin-bottom: 2em;*/
+  padding: 4.5em 2em;
+}
+
+.hero p {
+  margin-bottom: 0;
+}
+h1 {
+  font-family: 'Roboto Slab';
+  font-size: 100%;
+  margin: 0 0 0.25em;
+}
+
+/*List*/
+
+h1{
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*.steps{
+  width: 300px;
+  height: 405px;
+  position: absolute;
+  top: 15%;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}*/
+
+input[type=checkbox] {
+  /*ocultar checkbox*/
+  display: none;
+}
+
+/*.ui-sortable-placeholder{
+  border: 1px dotted #fff;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.ui-sortable-placeholder:after{
+  content: "Place me here. Pretty Please  :3";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}*/
+
+
+label{
+  background: #34495E;
+  height: 69px;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #2C3E50;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 5px 5px 5px 70px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+label h2 span{
+  display: block;
+  font-size: 5px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #bdc3c7;
+}
+
+label:before{
+  content:"";
+  width: 19px;
+  height: 19px;
+  border: 1px solid #416282;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  left: 20px;
+  top: 30%;
+  transition: border 0.7s ease;
+  z-index: 9999;
+}
+/*
+label:after{
+  content: "";
+  width: 60px;
+  height: 68px;
+  background: #2C3E50;
+  position: absolute;
+  left: 0;
+  top: 0;
+}*/
+
+
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2],
+#label-3:checked ~ label[for=label-3],
+#label-4:checked ~ label[for=label-4],
+#label-5:checked ~ label[for=label-5]{
+  background: #2C3E50;
+  border-bottom: 1px solid #34495E;
+  color: #1ABC9C;
+}
+
+#label-1:checked ~ label[for=label-1] h2 span,
+#label-2:checked ~ label[for=label-2] h2 span,
+#label-3:checked ~ label[for=label-3] h2 span,
+#label-4:checked ~ label[for=label-4] h2 span,
+#label-5:checked ~ label[for=label-5] h2 span{
+  color: #1ABC9C;
+}
+
+
+
+#label-1:checked ~ label[for=label-1]:before,
+#label-2:checked ~ label[for=label-2]:before,
+#label-3:checked ~ label[for=label-3]:before,
+#label-4:checked ~ label[for=label-4]:before,
+#label-5:checked ~ label[for=label-5]:before{
+  /*background: url("http://designmodo.github.io/Flat-UI/images/todo/done.png") no-repeat center center;*/
+  background-color: #f90;
+  border: 1px solid #1abc9d;
+}
+
+li:first-child label{
+  height: 50px;
+  text-transform: uppercase;
+  /*font-size: 12px;*/
+  border-right: 8px solid #f87c85;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+li:first-child label:before{
+  top: 40%;
+}
+
+li:first-child label:after{
+  height: 149px;
+}
+
+li:nth-child(2) label{
+  border-right: 8px solid #feb47f;
+}
+
+li:nth-child(3) label{
+  border-right: 8px solid #3498db;
+}
+
+li:nth-child(4) label{
+  border-right: 8px solid #b985ea;
+}
+
+li:last-child label{
+  border-right: 8px solid #43d6b0;
+}
+
+
+.list-header{
+  background: #8BC34A;
+  padding: 5%;
+  font-size: 14px;
+}
+
+/* Too narrow to support three columns */
+@media screen and (max-width: 680px){
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+        order: 0;
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+    }
+}
